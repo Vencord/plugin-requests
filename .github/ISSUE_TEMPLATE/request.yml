@@ -11,6 +11,9 @@ body:
         
         If a similar request already exists, **DO NOT reply** something like "i want this as well". Instead, react with :+1:. Only reply if you want to add additional info.
 
+        ## One Request per issue
+        Do not include multiple requests in one issue. If you are making 5 requests, make 5 separate issues
+        
         ## Do not request any of the following plugins:
         - Plugins that are not possible:
           - Stereo Mic

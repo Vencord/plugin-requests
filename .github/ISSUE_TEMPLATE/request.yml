@@ -1,0 +1,51 @@
+name: Plugin Request
+description: Create a plugin request
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # READ THIS BEFORE OPENING A REQUEST
+
+        Before opening a request, make sure a similar request doesn't already exist by [searching the existing issues](https://github.com/Vencord/plugin-requests/issues?q=is%3Aissue).
+        If a similar request already exists, DO NOT reply something like "i want this as well". Instead, react with :+1:. Only reply if you want to add additional info.
+
+        Do not request any of the following plugins:
+        - Plugins that are not possible:
+          - Stereo Mic
+          - Nitro features not already provided by [FakeNitro](https://vencord.dev/plugins/FakeNitro) or other existing plugins (e.g. free animated pfp, higher upload limit)
+          - Reading private channels
+        - Plugins that spam Discord and thus risk an account suspension:
+          - Message Pruner
+          - Animated Status
+          - NitroSnipers
+          - Selfbots
+        - Plugins that spy on other users like FakeDeafen
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Plugin Description
+      placeholder: Explain the plugin in detail
+    validations:
+      required: true
+
+  - type: input
+    id: existing-plugin
+    attributes:
+      label: Existing Plugin for other mod
+      description: Does a similar plugin already exist for any other mod? include a link to it
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: agreement-check
+    attributes:
+      label: Request Agreement
+      options:
+        - label: I read the above and made sure my plugin is possible and allowed
+          required: true
+        - label: "I checked the [existing plugins](https://vencord.dev/plugins) and made sure my plugin doesn't already exist"
+          required: true
+        - label: "I [searched the existing issues](https://github.com/Vencord/plugin-requests/issues?q=is%3Aissue) and made sure a similar request doesn't already exist"
+          required: true

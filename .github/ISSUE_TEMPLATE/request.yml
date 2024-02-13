@@ -8,9 +8,10 @@ body:
         # READ THIS BEFORE OPENING A REQUEST
 
         Before opening a request, make sure a similar request doesn't already exist by [searching the existing issues](https://github.com/Vencord/plugin-requests/issues?q=is%3Aissue).
-        If a similar request already exists, DO NOT reply something like "i want this as well". Instead, react with :+1:. Only reply if you want to add additional info.
+        
+        If a similar request already exists, **DO NOT reply** something like "i want this as well". Instead, react with :+1:. Only reply if you want to add additional info.
 
-        Do not request any of the following plugins:
+        ## Do not request any of the following plugins:
         - Plugins that are not possible:
           - Stereo Mic
           - Nitro features not already provided by [FakeNitro](https://vencord.dev/plugins/FakeNitro) or other existing plugins (e.g. free animated pfp, higher upload limit)

@@ -19,7 +19,7 @@ body:
         - Plugins that spam Discord and thus risk an account suspension:
           - Message Pruner
           - Animated Status
-          - NitroSnipers
+          - Nitro Snipers
           - Selfbots
         - Plugins that spy on other users like FakeDeafen
 
@@ -37,7 +37,7 @@ body:
       label: Existing Plugin for other mod
       description: Does a similar plugin already exist for any other mod? include a link to it
     validations:
-      required: true
+      required: false
 
   - type: checkboxes
     id: agreement-check

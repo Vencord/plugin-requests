@@ -16,6 +16,7 @@ body:
         
         ## Do not request any of the following plugins:
         - Plugins that are not possible:
+          - Message search changes (like extra filters)
           - Stereo Mic
           - Nitro features not already provided by [FakeNitro](https://vencord.dev/plugins/FakeNitro) or other existing plugins (e.g. free animated pfp, higher upload limit)
           - Reading private channels

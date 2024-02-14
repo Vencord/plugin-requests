@@ -25,7 +25,9 @@ body:
           - Animated Status
           - Nitro Snipers
           - Selfbots
-        - Plugins that spy on other users like FakeDeafen
+        - Plugins that replace text in your messages, like FxTwitter (use https://vencord.dev/plugins/TextReplace)
+        - Plugins that just hide ui elements like the gif button (Use quick css instead) 
+        - Plugins that spy on other users (like FakeDeafen)
 
   - type: textarea
     id: description

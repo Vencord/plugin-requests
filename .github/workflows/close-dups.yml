@@ -4,7 +4,7 @@ on:
       types: [opened]  
 env:
     GITHUB_TOKEN:  ${{ secrets.GITHUB_TOKEN }}
-    REPO_NAME: ${{ github.repository }}
+    REPO_NAME: ${{ github.event.repository.name }}
     REPO_OWNER: ${{ github.repository_owner }}
     ISSUE_NUMBER: ${{ github.event.issue.number }}
     CONTENT: ${{ github.event.issue.body }}

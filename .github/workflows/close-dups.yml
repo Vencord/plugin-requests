@@ -1,0 +1,20 @@
+name: JS Script To fix dups
+on:
+    issues:
+      types: [opened]  
+env:
+    GITHUB_TOKEN:  ${{ secrets.GITHUB_TOKEN }}
+    REPO_NAME: ${{ github.repository }}
+    REPO_OWNER: ${{ github.repository_owner }}
+    ISSUE_NUMBER: ${{ github.event.issue.number }}
+    CONTENT: ${{ github.event.issue.body }}
+jobs: 
+    script:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - uses: actions/setup-node@v4
+              with:
+                node-version: 20
+            - run: node validate.js
+            

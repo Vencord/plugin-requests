@@ -23,5 +23,8 @@ if (words.some(w => allContent.includes(w))) {
     state: 'closed',
     state_reason: 'not_planned',
     labels: ['rejected-automod']
+  }).then((r) => {
+    console.log(`Closed maybe?`)
+    r.text().then(console.log)
   })
 }

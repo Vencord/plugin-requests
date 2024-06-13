@@ -1,4 +1,4 @@
-//debyg
+// debyg
 console.log(process.env)
 // an array with all betterDiscordPlugins which end up being banned
 const betterDiscordPlugins = [
@@ -9,13 +9,13 @@ const words = [
   ...betterDiscordPlugins
 ]
 const ghApiReq = (path, body) => {
-    console.log(`https://api.github.com/repos/${process.env.REPO_OWNER}/${process.env.REPO_NAME}/${path}`)
+  console.log(`https://api.github.com/repos/${process.env.REPO_OWNER}/${process.env.REPO_NAME}/${path}`)
   return fetch(`https://api.github.com/repos/${process.env.REPO_OWNER}/${process.env.REPO_NAME}/${path}`, {
     headers: {
       Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
-    'X-GitHub-Api-Version': '2022-11-28',
-    'Content-Type': 'application/json',
-    'Accept': 'application/vnd.github+json',
+      'X-GitHub-Api-Version': '2022-11-28',
+      'Content-Type': 'application/json',
+      'Accept': 'application/vnd.github+json'
     },
     method: 'PATCH',
     body: JSON.stringify(body)

@@ -1,18 +1,18 @@
 
 // an array with all betterDiscordPlugins which end up being banned
 const betterDiscordPlugins = [
-"https://betterdiscord.app/plugin/FavoriteMedia", // https://github.com/Vencord/plugin-requests/issues/716
-"https://github.com/Eidenz/XSOverlay-BetterDiscord",
-"https://betterdiscord.app/plugin/ServerCounter",
-"https://betterdiscord.app/plugin/RemoveBlockedUsers"
+  'https://betterdiscord.app/plugin/FavoriteMedia', // https://github.com/Vencord/plugin-requests/issues/716
+  'https://github.com/Eidenz/XSOverlay-BetterDiscord',
+  'https://betterdiscord.app/plugin/ServerCounter',
+  'https://betterdiscord.app/plugin/RemoveBlockedUsers'
 ]
 const words = [
 // test param
-    'close-me-if-i-have-this-word',
+  'close-me-if-i-have-this-word',
 // extracted from issue template
-"Stereo Mic",
-"FxTwitter",
-"FakeDeafen",
+  'Stereo Mic',
+  'FxTwitter',
+  'FakeDeafen',
   ...betterDiscordPlugins
 ].map(e => e.toLowerCase().trim())
 const ghApiReq = (path, body) => {

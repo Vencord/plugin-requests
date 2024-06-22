@@ -58,5 +58,7 @@ body:
           required: true
         - label: "I checked the [existing plugins](https://vencord.dev/plugins) and made sure my plugin doesn't already exist"
           required: true
+        - label: I checked every box, despite not reading any
+          required: false
         - label: "I [searched the existing issues](https://github.com/Vencord/plugin-requests/issues?q=is%3Aissue) and made sure a similar request doesn't already exist"
           required: true

@@ -7,3 +7,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: gh issue lock ${{ github.event.issue.number }} --reason resolved
+    env:
+      GH_TOKEN: ${{ github.token }}

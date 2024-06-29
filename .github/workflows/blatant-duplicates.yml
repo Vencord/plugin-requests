@@ -1,0 +1,24 @@
+on:
+  issues:
+    types: [labeled]
+
+jobs:
+  lock:
+    if: github.event.label.name == "blatant duplicate"
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          url="${{ github.event.issue.html_url }}"
+          message="This issue has been marked as blatant duplicate, which means you have made no effort to try to check for existing issues.
+          For example a simple search for your issue title or the `Existing Plugin for other mod` link yields results.
+
+          As a consequence you are now banned from opening more requests."
+          
+          gh issue close "$url" --reason spam -c "$message" ||
+            gh issue comment "$url" -b "$message"
+
+          gh issue lock "$url" -r spam || true
+          GH_TOKEN="$TOKEN_WITH_BLOCK_PERMISSIONS" gh api -X PUT /orgs/Vencord/blocks/"${{ github.event.issue.user.login }}"
+    env:
+      GH_TOKEN: ${{ github.token }}
+      TOKEN_WITH_BLOCK_PERMISSIONS: ${{ secrets.TOKEN_WITH_BLOCK_PERMISSIONS }}

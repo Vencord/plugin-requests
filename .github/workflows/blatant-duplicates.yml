@@ -9,10 +9,10 @@ jobs:
     steps:
       - run: |
           url="${{ github.event.issue.html_url }}"
-          message="This issue has been marked as blatant duplicate, which means you have made no effort to try to check for existing issues.
+          message='This issue has been marked as blatant duplicate, which means you have made no effort to try to check for existing issues.
           For example a simple search for your issue title or the `Existing Plugin for other mod` link yields results.
 
-          As a consequence you are now banned from opening more requests."
+          As a consequence you are now banned from opening more requests.'
           
           gh issue close "$url" --reason spam -c "$message" ||
             gh issue comment "$url" -b "$message"

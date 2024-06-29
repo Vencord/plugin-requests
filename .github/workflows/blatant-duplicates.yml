@@ -14,7 +14,7 @@ jobs:
 
           As a consequence you are now banned from opening more requests.'
           
-          gh issue close "$url" --reason spam -c "$message" ||
+          gh issue close "$url" --reason "not planned" -c "$message" ||
             gh issue comment "$url" -b "$message"
 
           gh issue lock "$url" -r spam || true

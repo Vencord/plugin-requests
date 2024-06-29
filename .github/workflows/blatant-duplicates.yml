@@ -3,8 +3,8 @@ on:
     types: [labeled]
 
 jobs:
-  lock:
-    if: github.event.label.name == "blatant duplicate"
+  moderate:
+    if: github.event.label.name == 'blatant duplicate'
     runs-on: ubuntu-latest
     steps:
       - run: |

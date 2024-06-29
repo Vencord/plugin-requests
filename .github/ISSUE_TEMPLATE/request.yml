@@ -7,7 +7,10 @@ body:
       value: |
         # READ THIS BEFORE OPENING A REQUEST
 
-        **You will be blocked from opening further requests if you don't follow these rules.**
+        **You will be blocked from opening further requests if you don't follow these rules.
+        Blatant duplicates will result in a permanent non-appealable ban with no further warning.**
+        A blatant duplicate is a duplicate where it's obvious you have put in 0 effort to check
+        existing requests (e.g. searching for your own keywords / issue title yields results).
         
         Before opening a request, make sure a similar request doesn't already exist by [searching the existing issues](https://github.com/Vencord/plugin-requests/issues?q=is%3Aissue).
         

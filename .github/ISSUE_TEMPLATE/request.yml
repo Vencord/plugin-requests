@@ -58,10 +58,8 @@ body:
       label: Request Agreement
       options:
         - label: I read the above and made sure my plugin is possible and allowed
-          required: true
+          required: false
         - label: "I checked the [existing plugins](https://vencord.dev/plugins) and made sure my plugin doesn't already exist"
-          required: true
-        - label: I checked every box, despite not reading any
           required: false
         - label: "I [searched the existing issues](https://github.com/Vencord/plugin-requests/issues?q=is%3Aissue) and made sure a similar request doesn't already exist"
-          required: true
+          required: false

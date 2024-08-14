@@ -4,7 +4,7 @@ on:
 
 jobs:
   moderate:
-    if: github.event.label.name == 'blatant duplicate'
+    if: github.event.label.name == 'rejected (blatantly duplicate)'
     runs-on: ubuntu-latest
     steps:
       - run: |
